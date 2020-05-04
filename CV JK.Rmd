@@ -1,0 +1,113 @@
+---
+name: Jorge Eduardo King Montesinos
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: Msc (Hons), BSc
+position: Actuarial and Data Analytics Manager  
+address: Urb. Villa Fontana lote 15B Via arrayanes Puembo Ecuador
+phone: +593 984057673
+email: jkm88877@hotmail.com
+github: jorge.king
+linkedin: Jorge-King-M
+headcolor: 335DFF
+profilepic: cv.JPG
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Diploma in Actuarial Science", "Universidad Catolica de Chile", "Santiago, Chile", "Jun. 2018 - Jul. 2018", NA, 
+  "MSc (Hons) in Operational reseach, applied statistics and risk managment", "Cardiff University", "Cardiff, United Kingdom", "Oct. 2015 - Sep. 2016", "Distinction",
+  "MSc in Corporative Finance", "Escuela Politecnica del Ejercito ESPE", "Quito, Ecuador", "Oct. 2013 - Feb. 2015", "Best student of the degree",
+  "Diploma in Finance Strategy", "Universidad de la Plata", "La Plata, Argentina", "Oct. 2014 - Nov. 2014",NA,
+   "MSc in Finance and Insurence Laws", "Universidad Andina Simon Bolivar", "Quito, Ecuador", "Oct. 2011 - Agu. 2012", NA,
+  "BSc in Marketing", "Universidad San Francisco de Quito", "Quito, Ecuador", "Feb. 2007 - Feb. 2012",NA, 
+  "BSc in Bussiness Administration", "Universidad San Francisco de Quito", "Quito, Ecuador", "Feb. 2007 - Feb. 2012",NA, 
+  "BSc in Laws", "Universidad de las Americas", "Quito, Ecuador", "Oct. 2005 - Sep. 2011",NA
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "Pricing, reserves, underwriting gude, technical notes, reinsurence anlysisis",
+  "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "BI and analytics",
+  "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "Predictive analysis and modelling big data",
+  "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "Develop new products include pricing and underwriting terms",
+    "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "Risk managment and investment recomendations",
+    "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "RPA, scrapping and automization process",
+    "Actuarial and data analytics manager", "Aseguradora del Sur", "Quito - Ecuador", "Sep 2016 - Present", "Comercial Budget and technical forecasting",
+    "Research internship", "Lloyds Bank", "Cardiff, United Kingdom", "Jun. 2015 - Sep. 2015", "Behavior and credit risk scoring",
+    "Research internship", "Lloyds Bank", "Cardiff, United Kingdom", "Jun. 2015 - Sep. 2015", "Forecasting cancellation of personal loans",
+  "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Control de reserves",
+    "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Market, credit, liquidity and operational risk managment",
+    "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Develop the analytics software BI",
+    "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Statistical analysis",
+    "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Developr risk, productive and financial ratios",
+  "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Develop of risk score",
+    "Risk and statistical analyst", "Aseguradora del Sur", "Quito - Ecuador", "Feb. 2013 - Sep. 2015", "Control de reserves",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "corporate risk analysis",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "credit provisions",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "
+financial feasibility analysis of projects",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "
+finance analysis and forecasting",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "
+Risk analysisis of companies and people",
+    "Credit risk analyisis", "Banco Pichincha", "Quito - Ecuador", "May 2010 - Jan. 2013", "
+analysis of guarantees and recomedations",
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+<!-- # Relevant Skills -->
+<!-- ```{r} -->
+<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
+<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
+<!-- ``` -->
+
+# Awards and Skills
+## Awards
+```{r}
+tribble(
+  ~ award, ~ from, ~ year,
+  "Goverment scholarship", "Cardiff", "2015",
+  "Distinction", "Cardiff Univesity", "2016",
+  "Best student of rpomotion", "ESPE", "2013",
+) %>%
+  brief_entries(award, year, from)
+```
+
+## Skills
+```{r}
+tribble(
+  ~ scholarship, ~ from, ~ year,
+  "R, Visual Basic, Excel, SAS, STATA, SPSS, Python, SQL, Git, Docker, Xpress, Vensim",NA ,"DATA MODELLING SOFTWARE", 
+  "Power BI, Tableu, Oracle Data Visualization, R, Shinny, Power point ",NA, "DATA VISUALIZATION",
+  "Fluent in English and Spnish",NA,"LANGUAGE"
+) %>%
+  brief_entries(scholarship, year, from)
+```
+
+# References
+## Work reference
+```{r}
+tribble(
+  ~ name, ~ cargo, ~ phone,
+  "Rodrigo Cevallos Guevarra", "Aseguradora del Sur", "(593)993852813",
+  "Hector Reyes", "BID Invest Hub", "(593)998707990",
+  "Aseguradora del Sur", "Banco Pichincha", "(593)979015482",
+) %>%
+  brief_entries(name, cargo, phone)
+```
