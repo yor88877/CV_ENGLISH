@@ -10,7 +10,9 @@ github: jorge.king
 linkedin: Jorge-King-M
 headcolor: 335DFF
 profilepic: cv.JPG
-output: vitae::awesomecv
+output: 
+  vitae::moderncv: default
+  
 ---
 
 ```{r setup, include=FALSE}
