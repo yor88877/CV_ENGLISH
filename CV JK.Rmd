@@ -107,9 +107,9 @@ tribble(
 ```{r}
 tribble(
   ~ name, ~ cargo, ~ phone,
-  "Rodrigo Cevallos Guevarra", "Aseguradora del Sur", "(593)993852813",
+  "Rodrigo Cevallos Guevarra", "Aseguradora del Sur", "(+593)993852813",
   "Hector Reyes", "BID Invest Hub", "(593)998707990",
-  "Aseguradora del Sur", "Banco Pichincha", "(593)979015482",
+  "Aseguradora del Sur", "Banco Pichincha", "(+593)979015482",
 ) %>%
   brief_entries(name, cargo, phone)
 ```
